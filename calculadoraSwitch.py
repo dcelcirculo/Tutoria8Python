@@ -7,38 +7,38 @@
 
 def suma(a, b):
     suma = a + b
-    return suma
+    return f"El resultado de la suma es: {suma}"
 
 def resta(a, b):
     resta = a - b
-    return resta
+    return f"El resultado de la resta es {resta}"
 
 def multiplicacion(a, b):
     multiplicacion = a * b
-    return multiplicacion
+    return f"El resultado de la multiplicación es {multiplicacion}"
 
 def division(a, b):
     if b != 0:
         division = a / b
-        return division
+        return f"El resultado de la división es {division}"
     else:
         return f"No se puede dividir por cero. {a}/{b}"
 
 def div_entera(a, b):
     if b != 0:
         div_entera = a // b
-        return div_entera
+        return f"El resultado de la división entera es {div_entera}"
     else:
         return f"No se puede dividir por cero. {a}/{b}"
 
 def potencia(a, b):
     potencia = pow(a, b)
-    return potencia
+    return f"El resultado de la potencia es {potencia}"
 
 def modulo(a, b):
     if b != 0:
         modulo = a % b
-        return modulo
+        return f"El resultado de la modulo es {modulo}"
     else:
         return f"No se puede dividir por cero. {a}/{b}"
 
@@ -63,22 +63,37 @@ Escoja una opcion:
 for opcion in range(1000):
     print(menu)
     option = int(input("Escoja una opción: "))
+    print("")
     
     match option:
         case 1:
-            print(f"El total de la suma es {suma(a, b)}")
+            print("Opción seleccionada: ")
+            print("SUMA")
+            print(suma(a, b))
         case 2:
-            print(f"El resultado de la resta es {resta(a, b)}")
+            print("Opción seleccionada: ")
+            print("RESTA")
+            print(resta(a, b))
         case 3:
-            print(f"El resultado de la multiplicaión es {multiplicacion(a, b)}")
+            print("Opción seleccionada: ")
+            print("MULTIPLICACIÓN")
+            print(multiplicacion(a, b))
         case 4:
-            print(f"El resultado de la división es {division(a,b)}")
+            print("Opción seleccionada: ")
+            print("DIVISIÓN")
+            print(division(a,b))
         case 5:
-            print(f"El resultado de la division entera es {div_entera(a,b)}")
+            print("Opción seleccionada: ")
+            print("DIVISIÓN ENTERA")
+            print(div_entera(a,b))
         case 6:
-            print(f"El resultado de la potencia es {potencia(a,b)}")
+            print("Opción seleccionada: ")
+            print("POTENCIACIÓN")
+            print(potencia(a,b))
         case 7:
-            print(f"El resultado de el modulo es {modulo(a,b)}")
+            print("Opción seleccionada: ")
+            print("MODULO")
+            print(modulo(a,b))
         case 8:
             print(f"Gracias por utilizar nuestra calculadora.")
             break
